@@ -9,16 +9,16 @@ public class Message {
         this.asDouble = Double.parseDouble(this.asText);
         this.date = new Date();
     }
-    public Message(string asText){
+    public Message(String asText){
         this(asText.getBytes());
     }
     public Message(double asDouble) {
         this(Double.toString(asDouble));
     }
-    private double tryParse(string data)
+    private double tryParse(String data)
     {
         try{
-            return Duoble.parseDouble(data);
+            return Double.parseDouble(data);
         } catch (NumberFormatException exception)
         {
             system.out.println(exception.getMessage());
@@ -31,7 +31,5 @@ public class Message {
     public final String asText;
     public final double asDouble;
     public final Date date;
-
-
 
 }
