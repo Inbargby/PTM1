@@ -21,7 +21,7 @@ public class Message {
             return Double.parseDouble(data);
         } catch (NumberFormatException exception)
         {
-            system.out.println(exception.getMessage());
+            System.out.println(exception.getMessage());
             return Double.NaN;
         }
     }
